@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestingOnliner" verbose="1">
+    <suite-files>
+        <suite-file path="onlinerTestRunner.xml"/>
+    </suite-files>
+    <test name="OnlinerTest">
+        <parameter name="email" value="testaccount1111@mail.ru"/>
+        <parameter name="password" value="Test1111"/>
+        <classes>
+            <class name="onliner.tests.OnlinerPageTest"/>
+        </classes>
+    </test>
+</suite>
